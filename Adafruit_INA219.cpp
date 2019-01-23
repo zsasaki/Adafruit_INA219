@@ -173,7 +173,7 @@ void Adafruit_INA219::setCalibration_32V_2A(bool triggered)
   if (triggered) {
   	config = 	INA219_CONFIG_BVOLTAGERANGE_32V |
                 INA219_CONFIG_GAIN_8_320MV |
-                INA219_CONFIG_BADCRES_12BIT |
+				INA219_CONFIG_BADCRES_12BIT_128S_69MS |
 				INA219_CONFIG_SADCRES_12BIT_128S_69MS |
 				INA219_CONFIG_MODE_SANDBVOLT_TRIGGERED;
   } else {
